@@ -4,10 +4,10 @@ import { TreeNode } from '../models/tree-node.model';
 @Component({
   selector: 'TreeNodeContent',
   template: `<span *ngIf="!template">{{ node.displayField }}</span>
-  <template
+  <ng-template
     [ngTemplateOutlet]="template"
-    [ngOutletContext]="{ $implicit: node, node: node, index: index }">
-  </template>`,
+    [ngTemplateOutletContext]="{ $implicit: node, node: node, index: index }">
+  </ng-template>`,
 })
 export class TreeNodeContent {
   @Input() node: TreeNode;

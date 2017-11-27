@@ -54,10 +54,10 @@ import { TreeNode } from '../models/tree-node.model';
       <TreeNodeChildren [node]="node" [templates]="templates"></TreeNodeChildren>
       <TreeNodeDropSlot [dropIndex]="index + 1" [node]="node.parent"></TreeNodeDropSlot>
     </div>
-    <template
+    <ng-template
       [ngTemplateOutlet]="templates.treeNodeFullTemplate"
-      [ngOutletContext]="{ $implicit: node, node: node, index: index, templates: templates }">
-    </template>`
+      [ngTemplateOutletContext]="{ $implicit: node, node: node, index: index, templates: templates }">
+    </ng-template>`
 })
 
 export class TreeNodeComponent implements AfterViewInit {

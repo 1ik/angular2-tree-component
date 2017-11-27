@@ -28,7 +28,7 @@
     "example:cli:build": "cd example/cli && ng build --aot"
   },
   "files": [
-    "dist/"
+    "lib/"
   ],
   "readme": "https://github.com/500tech/angular2-tree-component/blob/master/README.md",
   "contributors": [
